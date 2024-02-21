@@ -18,6 +18,11 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   # Take those images and push to dockerHub.
+  - docker push adityajad0610/multi-client
+  - docker push adityajad0610/multi-nginx
+  - docker push adityajad0610/multi-server
+  - docker push adityajad0610/multi-worker  
+
 
 
 
